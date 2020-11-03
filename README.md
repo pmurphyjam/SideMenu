@@ -15,8 +15,8 @@ For iOS13 it uses KeyboardGuardian to move the TextField up over the keyboard.
 <br>
 <br>
 Side Menu Open
-![header image](https://raw.github.com/pmurphyjam/SideMenu/main/SideMenuOpen.png)
+![header image](https://raw.github.com/pmurphyjam/SideMenu/main/SideMenuOpen.jpg)
 <br>
 Side Menu Closed
 <br>
-![header image](https://raw.github.com/pmurphyjam/SideMenu/main/SideMenuClose.png)
+![header image](https://raw.github.com/pmurphyjam/SideMenu/main/SideMenuClose.jpg)
