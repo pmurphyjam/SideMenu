@@ -6,7 +6,9 @@ This example works in iOS13 and iOS14.
 
 Example will work in Landscape or Portrait mode.
 
-The Menu Handel is used to pull out the Menu List View, and you can also close it.
+The Menu Handel is used to pull out the Menu List View, and you can also use it to close it.
+
+The Hamburger Menu button on each view opens the Menu List View.
 
 There is also a LogoutView and LoginView along with RegisterView and ForgotPasswordView.
 
