@@ -19,6 +19,7 @@ let menuWidth:CGFloat = min((UIScreen.main.bounds.width / 3.5), 220)
 let menuOffset:CGFloat = 50
 let fontScaleFactor:CGFloat = 0.2
 let sideViewRoundedCorners:CGFloat = 35.0
+let iPhone = UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.phone
 
 func modelIdentifier() -> String {
     if let simulatorModelIdentifier = ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] { return simulatorModelIdentifier }
@@ -124,9 +125,12 @@ struct MenuCell: View {
                     .foregroundColor(.menuIconRegColor)
             }
             Text(menuItem.name).foregroundColor(.menuLabel)
-            
+                .padding(.trailing,20)
+
         }
-        .frame(width:menuWidth, alignment:.leading )
+        .frame(width:menuWidth, alignment:iPhone ? .leading : .center )
+        .padding(.trailing, 10)
+        .padding(.leading, 10)
     }
 }
 
@@ -158,9 +162,10 @@ struct AccountCell: View {
 
                 }
         }
-        .frame(width:menuWidth, alignment:.leading )
+        .frame(width:menuWidth, alignment:iPhone ? .leading : .center )
         .padding(.top, 15)
-
+        .padding(.trailing, 10)
+        .padding(.leading, 10)
     }
 }
 

@@ -286,7 +286,7 @@ struct RegisterView: View {
         Settings.shared.userName = viewModel.username
         Settings.shared.firstName = viewModel.firstName + " " + viewModel.lastName
         
-        if let birthDate:Date = viewModel.birthDate {
+        if let birthDate:Date = viewModel.birthDate as? Date {
             viewModel.birthdate = dateFormatter.string(from: birthDate)
             logger.debug("submitPressed : birthdate = \(viewModel.birthdate) ")
         }
